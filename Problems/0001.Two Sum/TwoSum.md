@@ -1,3 +1,5 @@
+
+```python3
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -18,3 +20,4 @@ class Solution(object):
                             return [nums.index(i),nums.index(i,nums.index(i)+1)]
                     else:
                         return [nums.index(target-i),nums.index(i)]
+```
