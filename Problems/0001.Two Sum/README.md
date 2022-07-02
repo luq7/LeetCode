@@ -18,6 +18,9 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
 
+## Brute Force
+- For each $i$ th element, we can add through all other elements $j$ where $j\neq i$
+
 ## Diff. approach Logics
 - Two Pass Hash Table: Runtime O(2n):
   1. Add each ele. from the list to the dict key=element,value=occurance
