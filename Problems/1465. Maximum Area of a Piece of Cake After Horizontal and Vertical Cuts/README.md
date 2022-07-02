@@ -50,7 +50,7 @@ class Solution(object):
         maxHDist = 0
         maxVDist = 0
         
-        # The distance between 0 to the first cut
+        # The distance between 0 to the first cut. Or append 0 to both list before sorting.
         maxHDist = max(maxHDist,abs(0-horizontalCuts[0]))
         maxVDist = max(maxVDist,abs(0-verticalCuts[0]))
         
@@ -61,7 +61,7 @@ class Solution(object):
         for i in range(1,len(verticalCuts)):
             maxVDist = max(maxVDist,verticalCuts[i]-verticalCuts[i-1])
         
-        # The distance between the last cut and the end of the cake
+        # The distance between the last cut and the end of the cake. Or append h,w to corresponding list before sorting
         maxHDist = max(maxHDist,h-horizontalCuts[-1])
         maxVDist = max(maxVDist,w-verticalCuts[-1])
         
